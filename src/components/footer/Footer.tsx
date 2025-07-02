@@ -21,9 +21,9 @@ const AppFooter = () => {
   const appName = "DayF Booking";
 
   return (
-
-    <AntdFooter className=" text-white py-12 px-4 md:px-8 lg:px-16  rounded-b-3xl"
-    style={{backgroundColor:'#00548C' }}
+    <AntdFooter
+      className="text-white py-12 px-4 md:px-8 lg:px-16 rounded-b-3xl"
+      style={{ backgroundColor: "#00548C" }}
     >
       <Row gutter={[16, 32]} justify="center">
         {/* Logo and Description */}
@@ -35,25 +35,37 @@ const AppFooter = () => {
           className="flex flex-col items-center md:items-start text-center md:text-left mb-8 md:mb-0"
         >
           <div className="flex items-center mb-4">
-          <Logo logo={logoImage} />
+            <Logo logo={logoImage} />
           </div>
           <p className="text-sm max-w-sm">
             {appName} makes booking your next stay easy, affordable, and
             stress-free. With thousands of hotels worldwide, exclusive deals,
-            and secure payment options, we're here to help you find the perfect
-            place to stay, every time.
+            and secure payment options, we&apos;re here to help you find the
+            perfect place to stay, every time.
           </p>
           <div className="flex space-x-6 mt-6">
-            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
+            <a
+              href="#"
+              className="text-white hover:text-gray-300 transition-colors duration-200"
+            >
               <TwitterOutlined style={{ fontSize: "24px" }} />
             </a>
-            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
+            <a
+              href="#"
+              className="text-white hover:text-gray-300 transition-colors duration-200"
+            >
               <FacebookFilled style={{ fontSize: "24px" }} />
             </a>
-            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
+            <a
+              href="#"
+              className="text-white hover:text-gray-300 transition-colors duration-200"
+            >
               <GithubOutlined style={{ fontSize: "24px" }} />
             </a>
-            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
+            <a
+              href="#"
+              className="text-white hover:text-gray-300 transition-colors duration-200"
+            >
               <InstagramFilled style={{ fontSize: "24px" }} />
             </a>
           </div>
@@ -70,27 +82,42 @@ const AppFooter = () => {
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-3">
             <li>
-              <a href="#" className="hover:text-gray-300 transition-colors duration-200">
+              <a
+                href="#"
+                className="hover:text-gray-300 transition-colors duration-200"
+              >
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300 transition-colors duration-200">
+              <a
+                href="#"
+                className="hover:text-gray-300 transition-colors duration-200"
+              >
                 Hotels
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300 transition-colors duration-200">
+              <a
+                href="#"
+                className="hover:text-gray-300 transition-colors duration-200"
+              >
                 Deals
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300 transition-colors duration-200">
+              <a
+                href="#"
+                className="hover:text-gray-300 transition-colors duration-200"
+              >
                 About Us
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300 transition-colors duration-200">
+              <a
+                href="#"
+                className="hover:text-gray-300 transition-colors duration-200"
+              >
                 Contact Us
               </a>
             </li>
@@ -113,10 +140,16 @@ const AppFooter = () => {
 
             <p className="text-lg font-semibold mb-4">Download Our App</p>
             <div className="flex justify-center md:justify-start space-x-6">
-              <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
+              <a
+                href="#"
+                className="text-white hover:text-gray-300 transition-colors duration-200"
+              >
                 <AndroidFilled style={{ fontSize: "36px" }} />
               </a>
-              <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
+              <a
+                href="#"
+                className="text-white hover:text-gray-300 transition-colors duration-200"
+              >
                 <AppleFilled style={{ fontSize: "36px" }} />
               </a>
             </div>
@@ -138,11 +171,10 @@ const AppFooter = () => {
           </div>
         </Col>
         <Col xs={24} md={12} className="text-center md:text-right">
-          <span>&copy; {new Date().getFullYear()}. All Rights Reserved</span>
+          <span>&copy; {new Date().getFullYear()} – All Rights Reserved</span>
         </Col>
       </Row>
     </AntdFooter>
- 
   );
 };
 
